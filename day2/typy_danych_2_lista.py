@@ -1,4 +1,5 @@
 # kolekcje
+from sys import base_prefix
 
 # lista - przechowuje dowolną ilosc danych, różnego typu na raz
 # zachowuje kolejnosć przy doawania elementów
@@ -111,3 +112,74 @@ print(lista)
 # sprawdzenie indexu dla danego eleemntu
 
 print(lista.index("Asia"))  # index 1
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")
+# a=3, b=3
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista_2 = lista  # odpowiednik a = b?, kopia referencji, adresu
+lista_copy = lista.copy()  # kopia elementów listy
+print(lista)
+print(lista_2)
+# ['Ola', 'Asia', 'Aga', 'Kamil', 'Adam', 'Radek']
+# ['Ola', 'Asia', 'Aga', 'Kamil', 'Adam', 'Radek']
+lista.clear()  # usunięcie elementów z listy o nazwie lista
+print(lista)  # []
+print(lista_2)  # []
+print(lista_copy)  # ['Ola', 'Asia', 'Aga', 'Kamil', 'Adam', 'Radek']
+print(id(lista))  # 2286828692032
+print(id(lista_2))  # 2286828692032
+print(id(lista_copy))  # 2286831271680
+
+liczby = [54, 999, 34, 12.34, 567]
+print(liczby)
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # [12.34, 34, 54, 567, 999]
+
+liczby = [54, 999, 34, 12.34, 567, "A"]
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort()
+# TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(lista_copy)
+# ['Ola', 'Asia', 'Aga', 'Kamil', 'Adam', 'Radek']
+lista_copy.sort()
+print(lista_copy)
+# ['Adam', 'Aga', 'Asia', 'Kamil', 'Ola', 'Radek']
+
+lista_copy.sort(reverse=True)
+print(lista_copy)
+# ['Radek', 'Ola', 'Kamil', 'Asia', 'Aga', 'Adam']
+
+lista_copy.reverse()
+print(lista_copy)
+# ['Adam', 'Aga', 'Asia', 'Kamil', 'Ola', 'Radek']
+
+liczby[3] = 666
+print(liczby[0:3])
+print(liczby[-2])
+print(liczby)
+# [54, 999, 34]
+# 567
+# [54, 999, 34, 666, 567, 'A']
+
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_copy)
+print(type(krotka))
+print(krotka)
+# <class 'tuple'>
+# ('Adam', 'Aga', 'Asia', 'Kamil', 'Ola', 'Radek')
