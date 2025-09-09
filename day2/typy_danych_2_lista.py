@@ -101,6 +101,7 @@ print(lista.pop(2))
 zmienna = lista.pop(-1)
 print("Zmienna:", zmienna)  # Zmienna: Bogdan
 print(lista)
+print(lista.pop()) # Adam, usunie ostatni
 
 # ['Radek', 'Ola', 'Asia', 'Aga', 'Kamil', 'Adam']
 lista.append("Radek")
