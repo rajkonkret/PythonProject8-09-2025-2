@@ -50,7 +50,32 @@ print(dictionary.get("imie"))  # True
 dictionary.update({"data": "12-12-2027"})
 print(dictionary)  # {'imie': 'Tomek', 'wiek': 48, 'data': '12-12-2027'}
 
-dict_small = {'x':2}
+dict_small = {'x': 2}
 print(dict_small)
-dict_small.update([("y",3),("z",8)])
+dict_small.update([("y", 3), ("z", 8)])
 print(dict_small)
+
+# # input() - wprowadzanie danych do komputera
+# tekst = input("Podaj imię")
+# print(tekst)
+# # Podaj imięRadek
+# # Radek
+
+# # napisac aplikację kalkulator
+# # input zwraca stringa
+# a = int(input('podaj pierwsza liczbę:'))
+# b = input('podaj drugą liczbę:')
+# print(int(a) + float(b))
+# # podaj pierwsza liczbę:5
+# # podaj drugą liczbę:6
+# # 11.0
+
+# napisać aplikację słownik pol-ang
+pol_ang = {'pies': "dog", 'kot': "cat", 'dach': "roof"}
+print("Znam takie słówka:", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia:")
+# print(pol_ang[odp.strip().casefold()])
+print(pol_ang.get(odp.strip().casefold(), "Nie ma w słowniku!"))
+# Znam takie słówka: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słówko do przetłumaczenia:Lew
+# Nie ma w słowniku!
