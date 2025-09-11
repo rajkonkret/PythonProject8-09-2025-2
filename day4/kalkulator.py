@@ -45,3 +45,6 @@ while True:
         print("Bład:", e)
     finally:
         print("Podaj kolejną operację")
+
+wyr = "5*7+9"
+print(eval(wyr))  # 44
