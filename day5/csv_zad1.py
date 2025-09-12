@@ -41,4 +41,4 @@ filename = "records_discount.csv"
 with open(filename, "w", newline="") as f:
     csvwriter = csv.DictWriter(f, fieldnames=list_product, delimiter=";")
     csvwriter.writeheader()
-    csvwriter.writerows(products)  # writerows - zapis listy sowników
+    csvwriter.writerows(products)  # writerows - zapis listy słowników
