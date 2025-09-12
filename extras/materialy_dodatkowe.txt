@@ -124,3 +124,6 @@ https://naukapythona.com.pl/
 https://naukajava.online/
 
 https://github.com/public-apis/public-apis
+
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
