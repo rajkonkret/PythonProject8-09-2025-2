@@ -122,3 +122,5 @@ https://www.hackerrank.com/challenges/py-hello-world/problem?isFullScreen=true
 https://pl.altapps.net/soft/hackerrank-com
 https://naukapythona.com.pl/
 https://naukajava.online/
+
+https://github.com/public-apis/public-apis
